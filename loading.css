@@ -1,0 +1,52 @@
+body {
+    background-color: black;
+}
+
+.text_blink {
+    position: absolute;
+    transform: translate(140px,-32px);
+    color: blue;
+    animation: blink 1s infinite;
+}
+
+
+.loading {
+    position: relative;
+    transform: translate(100px ,200px);
+    height: 10px;
+    width: 392px;
+    border: 10px solid red;
+    border-radius: 15px;
+}
+
+.loading_line {
+    position: absolute;
+    background-color: white;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    animation: loading 10s infinite linear;
+}
+
+@keyframes loading {
+    0%{
+      width: 0%;
+    }
+    25%{
+        width: 50%;
+    }
+    50%{
+        width: 75%;
+    }
+    75%{
+        width: 85%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    from { opacity: 1;}
+    to { opacity: 0;}
+}
