@@ -83,6 +83,6 @@ console.log(findReplicas(arr));
             replicas.push(arr[i]);
         }
     }
-    return replicas;
+    return replicas;/// //2  compare without replicas 3 // replicas with duplicate element
 }
 console.log(findReplicas(arr)); */
