@@ -70,4 +70,19 @@ return replicas;
 console.log(findReplicas(arr));
 
 
+/* const arr = [1, 2, 3, 1 ,5, 8, 8];
 
+ const findReplicas = (arr) => {
+    const replicas =[];
+    const compare = [];
+
+    for (let i = 0; i < arr.length; i++) {
+        if (!compare.includes(arr[i])) {
+            compare.push(arr[i]);
+        }else{
+            replicas.push(arr[i]);
+        }
+    }
+    return replicas;
+}
+console.log(findReplicas(arr)); */
