@@ -91,7 +91,7 @@ const arrMy = arr => {
         }
     }
     return sum / arr.length
-    /*  return Math.round (sum / arr.length); */
+    /*return Math.round (sum / arr.length); */
 }
 
 console.log(arrMy(arr)); */
