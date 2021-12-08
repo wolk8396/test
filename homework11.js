@@ -82,7 +82,7 @@ console.log(result);
 ];
 
 let sum = 0;
-const result =0;
+const result = 0;
 
 const arrMy = arr => {
     for (let i = 0; i < arr.length; i++) {
@@ -90,7 +90,8 @@ const arrMy = arr => {
          sum += arr[i].age;
         }
     }
-    return sum/arr.length
+    return sum / arr.length
+    /*  return Math.round (sum / arr.length); */
 }
 
 console.log(arrMy(arr)); */
