@@ -1,97 +1,107 @@
-// first exercise
-/* const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+/// 1 exercise
 
-const myArr = arr => {
-    const arrNew = [];
-    for (let i = 0; i < arr.length; i++) {
-        if ( arr[i] >=  0 ) {
-            arrNew.push('-' + arr[i])
-        }
-    }
-    return arrNew.join(' ');
+
+/* const arr = [1, 2, 3, 4, 5];
+
+const  removeItem = arr => {
+  return arr.splice(0, 1);
 }
-console.log(myArr(arr));  */
-
-
-/* const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-let result = [ ];
-
-let  a = arr.forEach( (item, i, arr) => {
-    if ( arr[i] !== 0){
-    arr[i] = arr[i]*-1
-    result = arr.join(' ')
-    }
-});
-
-console.log(typeof result);
-console.log( result); 
+console.log(removeItem(arr));
  */
 
-/* const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+/* const arrFirst = [1, 2, 3, 4, 5];
+const copy = [];
 
-const myArr = arr => {
-    for (let i = 0; i < arr.length; i++) {
-        if ( arr[i] !== 0 ) {
-            arr[i] = arr[i]*-1
-        }
-    }
-    return arr.join(' ');
+const arrSecond = arrFirst.map((item, index) => {
+  if ( index === 0)
+    return copy.push(item);
+});
+console.log(copy); */
+
+
+
+
+////////// 2 exercise
+/* const arr = [1, 2, 3, 4, 5];
+
+const  removeItem = arr => {
+  return arr.splice(4, 3);
 }
-console.log(myArr(arr)); */
+console.log(removeItem(arr)); */
+ 
 
-//second exercise
-////. Написать функцию createArray(n), которая создаёт массив произвольных
-// чисел от 0 до 9 длиной n. Попробовать так же найти
-// решение от 0 до 10 включительно
+///// map
+/* const arrFirst = [1, 2, 3, 4, 7];
 
-/* let array = [];
-let n = 10;
+const arrSecond = arrFirst.map(item => {
+  return arrFirst.splice(item[3],[4]);
+});
+console.log(arrFirst);
+ */
 
-for (let i = 0; i < n; i++) {
-     array.push(Math.round(9* Math.random()));
+/* const arrFirst = [1, 2, 3, 4, 5];
+const copy = [];
+
+const arrSecond = arrFirst.map((item, index, arr) => {
+  if ( index === arr.length-1)
+    return copy.push(item);
+});
+console.log(copy);
+ */
+
+///////////3 exercise
+/* const newBox = [];
+
+const arrayFilled = (value, len) => {
+  for (let i = 0; i < len; i++) {
+    newBox.push(value);
+  }
+  return newBox;
 }
-console.log(array); */
+console.log(arrayFilled(4, 5)); */
 
 
+/////////4 exercise
+/* const newBox = [];
 
-/// third exercise
- let users = [
-    {name : 'Jack', age: 50},
-    {name : 'Jack', age: 25},
-    {name : 'Jack', age: 20},
-];
+const generateRange = (start, len) => {
+  for (let i = start; i < len; i++) {
+    newBox.push(start);
+    start++
+  }
+  return newBox;
+}
+console.log(generateRange(4, 10)); */
 
-let sum = 0;
-let ages = [];
-let result = 0;
+/////////////////////////////////////////////////////////////////////////////////////
+///5 exercise
 
-let  b = users.forEach( (item, i, array) => {
-    sum += item.age;
-    result = sum / array.length;
+ /*const array = 'Каждый охотник желает знать, где сидит фазан';
+const copy = [];
+let arr = array.split(' ');
+
+const  x = arr.forEach(item => {
+  copy.push(item[0])
 },);
-
-console.log(result); 
-
+console.log(copy); */
 
 
+/* const array = 'Каждый охотник желает знать, где сидит фазан';
+const copy = [];
+let arr = array.split(' ');
 
-/* let arr = [
-    {name : 'Jack', age: 50},
-    {name : 'Jack', age: 25},
-    {name : 'Jack', age: 20},
-];
-
-let sum = 0;
-const result = 0;
-
-const arrMy = arr => {
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i].age > 0) {
-         sum += arr[i].age;
-        }
-    }
-    return sum / arr.length
-    /*return Math.round (sum / arr.length); */
+const findLetters = arr => {
+  for (let i = 0; i < arr.length; i++) {
+   copy.push(arr[i][0].split(' '));
+  }
+  return copy.join(' ');
 }
+console.log(findLetters(arr));  */
 
-console.log(arrMy(arr)); */
+
+
+
+
+
+
+
