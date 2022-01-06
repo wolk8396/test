@@ -65,8 +65,3 @@ btnCreate.onclick = () => {
 	}
 		body.appendChild(p);
 	}
-
-
-
-
-
