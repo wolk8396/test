@@ -1,0 +1,22 @@
+.main-wrapper {
+  width: 80%;
+  margin: 50px auto;
+}
+
+.main-wrapper__title {
+  margin-bottom: 20px;
+}
+
+.main-wrapper__submit-btn {
+  margin-top: 20px;
+}
+
+.main-wrapper__todos {
+  margin-top: 10px;
+  min-height: 50px;
+  border: 1px solid black;
+}
+
+.main-wrapper__todos__container {
+  background-color: blue;
+}
